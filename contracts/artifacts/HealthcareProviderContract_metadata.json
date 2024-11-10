@@ -1,0 +1,102 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patientContractAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "doctor",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "patient",
+						"type": "address"
+					}
+				],
+				"name": "PatientDataValidated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patient",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_data",
+						"type": "string"
+					}
+				],
+				"name": "validateData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HealthcareProviderContract.sol": "HealthcareProviderContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HealthcareProviderContract.sol": {
+			"keccak256": "0x1d4be7c8a37d5fed314bf0c60b02c5fa2da33cd03e41bfc0887df6d0a21145da",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://25ee26641951ec70a66bfb2d61dfa5a06e2d7771dea64f53bb1906e810bfa1bf",
+				"dweb:/ipfs/QmXb4sXwdoiHPDExMSTdEZY6evcvmd5sfUhspY5fdbbPYM"
+			]
+		},
+		"contracts/PatientsContract.sol": {
+			"keccak256": "0xff86b20184b232eb166ea46d4163dc45a7f723fb3186744c92854f3adfe0f4d1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://df084f65fe6c3736ba9b2af5c12e4931a5fb39bce15b252a5c176ff3447dd74a",
+				"dweb:/ipfs/QmToDjY5s7gLdv67QTxaR4tceowMfPPvwHTYNoBGKrEf6t"
+			]
+		}
+	},
+	"version": 1
+}
