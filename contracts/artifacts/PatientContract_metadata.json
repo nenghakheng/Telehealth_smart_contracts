@@ -1,0 +1,161 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "patient",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "doctor",
+						"type": "address"
+					}
+				],
+				"name": "DataAccessGranted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "patient",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "doctor",
+						"type": "address"
+					}
+				],
+				"name": "DataAccessRequested",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "patient",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "medicalHistory",
+						"type": "string"
+					}
+				],
+				"name": "DataAdded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_medicalHistory",
+						"type": "string"
+					}
+				],
+				"name": "addPatientData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_doctor",
+						"type": "address"
+					}
+				],
+				"name": "approveAccess",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patient",
+						"type": "address"
+					}
+				],
+				"name": "getPatientData",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patient",
+						"type": "address"
+					}
+				],
+				"name": "requestAccess",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/PatientsContract.sol": "PatientContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/PatientsContract.sol": {
+			"keccak256": "0xff86b20184b232eb166ea46d4163dc45a7f723fb3186744c92854f3adfe0f4d1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://df084f65fe6c3736ba9b2af5c12e4931a5fb39bce15b252a5c176ff3447dd74a",
+				"dweb:/ipfs/QmToDjY5s7gLdv67QTxaR4tceowMfPPvwHTYNoBGKrEf6t"
+			]
+		}
+	},
+	"version": 1
+}
