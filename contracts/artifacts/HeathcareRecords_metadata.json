@@ -1,0 +1,151 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "patientID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "patientName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "diagnosis",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "treatment",
+						"type": "string"
+					}
+				],
+				"name": "addRecord",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "provider",
+						"type": "address"
+					}
+				],
+				"name": "authorizeProvider",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "patientID",
+						"type": "uint256"
+					}
+				],
+				"name": "getPatientRecords",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "recordID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "patientName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "diagnosis",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "treatment",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct HeathcareRecords.Record[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HealthcareRecords.sol": "HeathcareRecords"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HealthcareRecords.sol": {
+			"keccak256": "0x41bcb256abfa187f41342ded0123bfb9b211b38acd31056822d80e2f088f3e9a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6ce7ac509d807e4f533494109156f7f950bd94cffd59a49d2de5fe1822f5bb7f",
+				"dweb:/ipfs/QmZDjtYM8NUpvLG3A53nfaX5m72QrQGp9ChDPN83wA5S7Q"
+			]
+		}
+	},
+	"version": 1
+}
