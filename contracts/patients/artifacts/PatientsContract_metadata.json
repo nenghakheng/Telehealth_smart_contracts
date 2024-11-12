@@ -1,0 +1,221 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "editPatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPatient",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "patientCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "patientList",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "searchPatientDemographic",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ic",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_phone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_dob",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_houseAddr",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_allergies",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_medication",
+						"type": "string"
+					}
+				],
+				"name": "setPatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/patients/patientsContract.sol": "PatientsContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/patients/patients.sol": {
+			"keccak256": "0x65162acba0a492b9337cb0327d748a786f0a40bc1a2767970bd53d61f5fba927",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a3b6a2ed5623d5015ec11348d0d4d82d19e47b739b3af52114a207fb8674dfbd",
+				"dweb:/ipfs/QmdjuCgBm4yeVurAjuo2WJRueHJ3kp67xZFYdFsvFWCkLQ"
+			]
+		},
+		"contracts/patients/patientsContract.sol": {
+			"keccak256": "0x185289ce8a3ca9372a0d88530a85efc715ac7a4921d9534da97d1b22fc1cb6b4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0f9c956628198e06e2083a722b4cfbef4a15123b3ebba80b6b6b2de9bc259cb6",
+				"dweb:/ipfs/QmeqiWZPH7Upn5uj5uMvrZ1SP8P1Cdk3VeHWnv5zpdTW7B"
+			]
+		}
+	},
+	"version": 1
+}
