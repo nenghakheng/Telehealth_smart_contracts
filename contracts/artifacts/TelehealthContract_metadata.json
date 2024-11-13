@@ -1,0 +1,300 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_doctorsAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_patientsAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_permissionAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_queriesAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getDoctors",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "getPatientDemographic",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "phone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dob",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPatients",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "grantPermission",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_phone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_dob",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_qualification",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_major",
+						"type": "string"
+					}
+				],
+				"name": "registerDoctor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ic",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_phone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_dob",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_houseAddr",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_diagnoses",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_medication",
+						"type": "string"
+					}
+				],
+				"name": "registerPatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/TelehealthContract.sol": "TelehealthContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/TelehealthContract.sol": {
+			"keccak256": "0xb6c10423803a7d163b685cf860d6ea2d828e193bd5de6206a8796142da24a3af",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://21f8dc000e5eaaf9e8c94b38a17cda2ad7292e297a507fd6ecb529842792d829",
+				"dweb:/ipfs/QmPbq9eW5LvN7sns4FtXrhuJs9vjgWvKm91ds765Dki9we"
+			]
+		},
+		"contracts/doctors/doctors.sol": {
+			"keccak256": "0x8c324caed00db9e741f8816e243248efe836362fef1af992a1aea215f04887a2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://461054972c042f482c831bb24496375a33fa584998916bb0334e5de18101615d",
+				"dweb:/ipfs/QmVWGGTgVuUAUW8rgrBzZfgnyLSNrhNqo5fAm6KSjv4nxu"
+			]
+		},
+		"contracts/doctors/doctorsContract.sol": {
+			"keccak256": "0xc2202d6084ee4a741cec7444ac86fdbd7bde9a310696c04ef4e4fe476a0ffae3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d956b98f4304e64e60e33c6faef574767f5b5ec41777aa7d51d07870aa444b01",
+				"dweb:/ipfs/QmZgUZVRzbC2mdoHNTSy1Rm7WSYnafUrXZpNV7HG5GqKXo"
+			]
+		},
+		"contracts/patients/patients.sol": {
+			"keccak256": "0xd6264d02e8a037936d46258221d5eb90013aca16d9ad82061220afbf9ae4eafd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://67c9224c2bade59fe49360470b39f4f165b58cc63abb76af8c18d6ee9d23e092",
+				"dweb:/ipfs/QmcKqe1Yyuj4BWxoaskrzURJEBWqr93iLZzSuncFL6aTT4"
+			]
+		},
+		"contracts/patients/patientsContract.sol": {
+			"keccak256": "0x5d8b881f97c9142a9584d6f7149af9306604a360a58592890e57c7154e100653",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2a5e22947dcf2a40266bb9f95afed4e4ce52fbab850299239b72dc4a3d702def",
+				"dweb:/ipfs/Qme8Qh5XGKcFZ1xT5NuGg2TUmeV8bZ5zVoXaTsnMKny19q"
+			]
+		},
+		"contracts/permissions/permissionsContract.sol": {
+			"keccak256": "0x13871711b0e1b6147ea666f7af9c50363cc949e1a1b79ae7d6c4528f3f92808f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6e38bdb9d0c4ac6eed50fb81cde26873bdd5ae5615d043c23a2ae8dbcd88a0de",
+				"dweb:/ipfs/QmaW2ubR2ryRAed9GKRVJ1ivVWheKb4zEDuf4YMnEZH2nt"
+			]
+		},
+		"contracts/queries/queriesContract.sol": {
+			"keccak256": "0x8a2dde5d3b9aba74a3d4854a442998213593fc1cb67ce07bff775b485b32ac11",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://baa6ce55460fb060604407390ae84f6b8ae0f50d2d22b9073609ec640421fc11",
+				"dweb:/ipfs/QmSdhVoj7tW5hW8y7qCFQtckjzPEhMYdziGE6RbaJeXs33"
+			]
+		}
+	},
+	"version": 1
+}

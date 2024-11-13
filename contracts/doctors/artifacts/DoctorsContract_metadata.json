@@ -1,0 +1,142 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "doctorCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "doctorList",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getDoctors",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_phone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_dob",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_qualification",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_major",
+						"type": "string"
+					}
+				],
+				"name": "setDoctor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/doctors/doctorsContract.sol": "DoctorsContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/doctors/doctors.sol": {
+			"keccak256": "0x8c324caed00db9e741f8816e243248efe836362fef1af992a1aea215f04887a2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://461054972c042f482c831bb24496375a33fa584998916bb0334e5de18101615d",
+				"dweb:/ipfs/QmVWGGTgVuUAUW8rgrBzZfgnyLSNrhNqo5fAm6KSjv4nxu"
+			]
+		},
+		"contracts/doctors/doctorsContract.sol": {
+			"keccak256": "0xc2202d6084ee4a741cec7444ac86fdbd7bde9a310696c04ef4e4fe476a0ffae3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d956b98f4304e64e60e33c6faef574767f5b5ec41777aa7d51d07870aa444b01",
+				"dweb:/ipfs/QmZgUZVRzbC2mdoHNTSy1Rm7WSYnafUrXZpNV7HG5GqKXo"
+			]
+		}
+	},
+	"version": 1
+}

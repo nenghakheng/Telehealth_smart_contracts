@@ -1,28 +1,26 @@
-REMIX DEFAULT WORKSPACE
+## Telehealth Smart Contract System
+### This project includes Solidity contracts for a telehealth platform, managing permissions, doctors, patients, and data queries.
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+### Contract Overview
+- PermissionsContract: Manages access permissions.
+- PatientsContract: Manages patient registration and data.
+- DoctorsContract: Manages doctor registration and data.
+- QueriesContract: Allows authorized users to query patient data.
+- TelehealthContract: Main contract integrating all functionalities.
 
-This workspace contains 3 directories:
+### Deployment Order
+- Deploy PermissionsContract – Manages access permissions.
+- Deploy PatientsContract – Requires PermissionsContract address.
+- Deploy QueriesContract – Requires PermissionsContract and PatientsContract addresses.
+- Deploy DoctorsContract – No dependencies.
+- Deploy TelehealthContract – Requires addresses of all contracts above.
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+### Basic Usage
+- Register Doctor: registerDoctor(...)
+- Register Patient: registerPatient(...)
+- Grant Permission: grantAccessPermission(address _addr)
+- Query Patient Data: getPatientDemographics(address _patientAddress)
 
-SCRIPTS
-
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
-
-For the deployment of any other contract, just update the contract's name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
-
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
-
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
-
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+### Notes
+Deploy contracts in order to avoid dependency issues.
+Interact primarily through TelehealthContract.
