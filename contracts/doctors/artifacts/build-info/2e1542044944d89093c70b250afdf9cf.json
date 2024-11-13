@@ -1,0 +1,330 @@
+{
+	"id": "2e1542044944d89093c70b250afdf9cf",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/doctors/doctors.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nstruct Doctors {\r\n    string id;\r\n    string name;\r\n    string phone;\r\n    string gender;\r\n    string dob;\r\n    string qualification;\r\n    string major;\r\n    address addr;\r\n    uint timestamp;\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": true,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": [],
+			"evmVersion": "london"
+		}
+	},
+	"output": {
+		"sources": {
+			"contracts/doctors/doctors.sol": {
+				"ast": {
+					"absolutePath": "contracts/doctors/doctors.sol",
+					"exportedSymbols": {
+						"Doctors": [
+							20
+						]
+					},
+					"id": 21,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						},
+						{
+							"canonicalName": "Doctors",
+							"id": 20,
+							"members": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "id",
+									"nameLocation": "89:2:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "82:9:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "82:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 5,
+									"mutability": "mutable",
+									"name": "name",
+									"nameLocation": "105:4:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "98:11:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "98:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 7,
+									"mutability": "mutable",
+									"name": "phone",
+									"nameLocation": "123:5:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "116:12:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 6,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "116:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 9,
+									"mutability": "mutable",
+									"name": "gender",
+									"nameLocation": "142:6:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "135:13:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 8,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "135:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 11,
+									"mutability": "mutable",
+									"name": "dob",
+									"nameLocation": "162:3:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "155:10:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 10,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "155:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 13,
+									"mutability": "mutable",
+									"name": "qualification",
+									"nameLocation": "179:13:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "172:20:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 12,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "172:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 15,
+									"mutability": "mutable",
+									"name": "major",
+									"nameLocation": "206:5:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "199:12:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 14,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "199:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 17,
+									"mutability": "mutable",
+									"name": "addr",
+									"nameLocation": "226:4:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "218:12:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 16,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "218:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 19,
+									"mutability": "mutable",
+									"name": "timestamp",
+									"nameLocation": "242:9:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "237:14:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 18,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "237:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"name": "Doctors",
+							"nameLocation": "67:7:0",
+							"nodeType": "StructDefinition",
+							"scope": 21,
+							"src": "60:195:0",
+							"visibility": "public"
+						}
+					],
+					"src": "33:222:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

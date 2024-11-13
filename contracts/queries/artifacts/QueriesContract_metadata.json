@@ -1,0 +1,125 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patientsAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_permissionsAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "searchPatientDemographic",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "phone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dob",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/queries/queriesContract.sol": "QueriesContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/patients/patients.sol": {
+			"keccak256": "0xd6264d02e8a037936d46258221d5eb90013aca16d9ad82061220afbf9ae4eafd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://67c9224c2bade59fe49360470b39f4f165b58cc63abb76af8c18d6ee9d23e092",
+				"dweb:/ipfs/QmcKqe1Yyuj4BWxoaskrzURJEBWqr93iLZzSuncFL6aTT4"
+			]
+		},
+		"contracts/patients/patientsContract.sol": {
+			"keccak256": "0x5d8b881f97c9142a9584d6f7149af9306604a360a58592890e57c7154e100653",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2a5e22947dcf2a40266bb9f95afed4e4ce52fbab850299239b72dc4a3d702def",
+				"dweb:/ipfs/Qme8Qh5XGKcFZ1xT5NuGg2TUmeV8bZ5zVoXaTsnMKny19q"
+			]
+		},
+		"contracts/permissions/permissionsContract.sol": {
+			"keccak256": "0x13871711b0e1b6147ea666f7af9c50363cc949e1a1b79ae7d6c4528f3f92808f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6e38bdb9d0c4ac6eed50fb81cde26873bdd5ae5615d043c23a2ae8dbcd88a0de",
+				"dweb:/ipfs/QmaW2ubR2ryRAed9GKRVJ1ivVWheKb4zEDuf4YMnEZH2nt"
+			]
+		},
+		"contracts/queries/queriesContract.sol": {
+			"keccak256": "0x8a2dde5d3b9aba74a3d4854a442998213593fc1cb67ce07bff775b485b32ac11",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://baa6ce55460fb060604407390ae84f6b8ae0f50d2d22b9073609ec640421fc11",
+				"dweb:/ipfs/QmSdhVoj7tW5hW8y7qCFQtckjzPEhMYdziGE6RbaJeXs33"
+			]
+		}
+	},
+	"version": 1
+}
